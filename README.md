@@ -3,7 +3,7 @@
 A production-grade distributed task queue system built with FastAPI, Redis, and PostgreSQL. Supports priority scheduling, exponential backoff retry, dead letter queue, and a real-time monitoring dashboard.
 
 **Live Demo:** [your-render-url.onrender.com](https://task-queue-dashboard.onrender.com/)  
-**API Docs:** [your-render-url.onrender.com/docs](https://task-queue-api-7oda.onrender.com)
+**API Docs:** [your-render-url.onrender.com/docs](https://task-queue-api-7oda.onrender.com/docs)
 
 ---
 
