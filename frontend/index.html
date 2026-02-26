@@ -491,9 +491,18 @@
   }
 
   // ── Auto Refresh ───────────────────────────────────────────
-  async function refresh() {
-    await Promise.all([fetchMetrics(), fetchTasks()]);
-  }
+async function refresh() {
+    try {
+        await Promise.all([fetchMetrics(), fetchTasks()]);
+        document.getElementById('live-badge').innerHTML = `
+            <div class="dot"></div>
+            <span>Live — refreshes every 3s</span>`;
+    } catch(e) {
+        document.getElementById('live-badge').innerHTML = `
+            <div class="dot" style="background:#f59e0b"></div>
+            <span>Connecting to API...</span>`;
+    }
+}
 
   refresh();
   setInterval(refresh, 3000);
