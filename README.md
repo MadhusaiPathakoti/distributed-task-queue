@@ -9,7 +9,7 @@ A production-grade distributed task queue system built with FastAPI, Redis, and 
 
 ## 📸 Screenshots
 
-> Add your dashboard screenshot here
+
 
 ---
 
